@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <title>表单注册</title>
+</head>
+
+<body>
+<div class="register">
+    <div class="tips">
+    </div>
+
+    <form th:action="@{/login}" method="post">
+        <ul>
+            <li>
+                <label >用户名</label>
+                <input type="text" name="username" class="name">
+            </li>
+            <li>
+                <label >密码</label>
+                <input type="password" name="password" class="pass">
+            </li>
+
+            <li>
+                <label ></label>
+                <input type="submit" class="submit" value="登录">
+            </li>
+            <!--<a href="changePassWord.html">修改密码</a>-->
+        </ul>
+    </form>
+</div>
+</body>
+
+</html>
